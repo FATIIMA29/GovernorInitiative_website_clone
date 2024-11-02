@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 
 export default function navbar() {
@@ -14,11 +15,11 @@ export default function navbar() {
         <h1 className='text_shadow text-[1.125rem] font-extrabold text-[#b9d8f3] lg:hidden '>
             tuition free program  </h1>
         <div className='hidden items-center gap-5 text-[#FAF9f6] sm:flex lg:gap-10'>  
-      <a href="/"><div>home</div></a>
-      <a href="/apply"><div>apply</div></a>
-      <a href="/jobs"><div>jobs</div></a>
-      <a href="/results"><div>results</div></a>
-      <a href="/courses"><div>courses</div></a>
+      <Link href="/"  > <div>home</div>    </Link>            
+      <Link href="/apply" > <div>apply</div></Link>             
+      <Link href="/jobs" > <div>jobs</div></Link>      
+      <Link href="/results"> <div>results</div></Link>    
+      <Link href="/course" > <div>courses</div> </Link>   
       </div>  
       <div className='block  sm:hidden'>
         <svg stroke='currentColor' fill='none' strokeWidth='2' viewBox='0 0 24 24' strokeLinecap='round' strokeLinejoin='round' className='text-white  w-6 h-18'>
