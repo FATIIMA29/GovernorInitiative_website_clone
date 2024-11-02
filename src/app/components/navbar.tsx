@@ -6,9 +6,9 @@ export default function navbar() {
   return (
     <div className=' sticky-top-0 bg-[#044e83] bg-main print-hidden'>
         <div className='m-auto flex h-16 w-[95%] items-center justify-between md:h-20 capitalize '>
-            <a href="#">
+            <Link href="#">
                  <img src="/logo.png" alt="logo" width='90' height='113' className='mt-14 w-[70px] sm:w-[80px] md:w-[90px]'  />
-            </a>
+            </Link>
         <h1 className='text_shadow hidden text-[15px] font-extrabold text-[#b9d8f3] lg:block xl-lg:text-xl xl:text-2xl '>
             tuition free education program on latest technologies 
             </h1>
