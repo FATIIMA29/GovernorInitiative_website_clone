@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper"; 
 import "swiper/css";
 import { useState, useRef } from "react";
+import Image from 'next/image'
 
 export default function ImageSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,8 +34,8 @@ export default function ImageSlider() {
           <SwiperSlide key={index}>
             <div className="flex justify-between items-center md:w-full w-[95wv] cursor-grab">
          
-            <img src={slide.src1} alt={slide.alt} className="md:h-[560px] md:w-1/2 w-[95vw] h-[300px] object-cover rounded-lg md:mr-1"/>     
-            <img src={slide.src2} alt={slide.alt} className="md:h-[560px] md:w-1/2 w-[95vw] h-[300px] object-cover rounded-lg md:ml-1" />
+            <Image src={slide.src1} alt={slide.alt} className="md:h-[560px] md:w-1/2 w-[95vw] h-[300px] object-cover rounded-lg md:mr-1"/>     
+            <Image src={slide.src2} alt={slide.alt} className="md:h-[560px] md:w-1/2 w-[95vw] h-[300px] object-cover rounded-lg md:ml-1" />
      
 
             </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import { useState } from "react"
 
 
@@ -47,12 +48,12 @@ const Hero = () => {
 
 <div>
 <div className="relative mt-7 flex w-full items-end justify-center md:m-auto  md:justify-end">
-  <img src="/bg-kamran-sir-pic.png" alt="kamran" width="1600px" height="1212px" data-nimg="1" className=" relative  h-[600px]   min-w-[720px] lg:w-[660px] bg-transparent"  />
+  <Image src="/bg-kamran-sir-pic.png" alt="kamran" data-nimg="1" className=" relative  h-[600px]   min-w-[720px] lg:w-[660px] bg-transparent"  />
   </div>
 </div> 
 
 <div className="hidden md:block relative h-full w-full overflow-hidden">
-  <img src="/bg-kamran-sir-pic.png" alt="Image" className="absolute right-[-250px] min-w-[900px] lg:min-h-[660px] md:min-w-[800px] md:bottom-0 lg:bottom-[unset]"/>
+  <Image src="/bg-kamran-sir-pic.png" alt="Image" className="absolute right-[-250px] min-w-[900px] lg:min-h-[660px] md:min-w-[800px] md:bottom-0 lg:bottom-[unset]"/>
 </div>
 
 

@@ -1,4 +1,4 @@
-import React from "react";git 
+import React from "react";
 import Hero from "./components/hero";
 import Section1 from "./components/section_01";
 import Section2 from "./components/section_02";

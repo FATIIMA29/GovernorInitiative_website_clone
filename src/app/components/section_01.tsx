@@ -1,3 +1,4 @@
+import Image from "next/image"
 const Section1 = () => {
     return (
      <section className='w-[95%] mx-auto'>
@@ -13,13 +14,13 @@ const Section1 = () => {
   <div className='flex flex-col justify-center items-center md:flex-row md:justify-between px-2 md:px-0'>
   
   <div className='mb-4 md:mb-0 h-[300px] w-full rounded-lg shadow-black shadow-lg overflow-hidden md:mr-2'>
-  <img src="/image-01.jpg" alt="image" className='object-cover h-[300px] w-full'/>
+  <Image src="/image-01.jpg" alt="image" className='object-cover h-[300px] w-full'/>
   </div>
   <div className='mb-4 md:mb-0 h-[300px] w-full rounded-lg shadow-black shadow-lg overflow-hidden md:mr-2'>
-  <img src="/image-02.jpg" alt="image" className='object-cover h-[300px] w-full'/>
+  <Image src="/image-02.jpg" alt="image" className='object-cover h-[300px] w-full'/>
   </div>
   <div className='mb-4 md:mb-0 h-[300px] w-full rounded-lg shadow-black shadow-lg overflow-hidden md:mr-2'>
-  <img src="/image-03.jpg" alt="image" className='object-cover h-[300px] w-full'/>
+  <Image src="/image-03.jpg" alt="image" className='object-cover h-[300px] w-full'/>
   </div>
   
   
