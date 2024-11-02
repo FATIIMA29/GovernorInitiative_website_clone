@@ -1,30 +1,49 @@
-import Card from "./card"
-
-
-
-
-const Section3 = () => {
- const cardDetails = [
-
-{imageSrc:"/card1.jpg",heading:"Programming Fundamentals"},
-{imageSrc:"/card2.jpg",heading:"Web2 Using NextJS"},
-{imageSrc:"/img1.jpg",heading:"Earn as You Learn"},
-
-
-
-]
+import React from 'react'
+import Image from 'next/image'
+import Course1 from '../../../public/card1.jpg'
+import Course2 from '../../../public/card2.jpg'
+import Course3 from '../../../public/card.png'
+export default function section_03() {
   return (
-    <section className="w-[95%] mx-auto">
-<h3 className="font-bold my-4 text-center md:text-start text-[#044e83] text-2xl md:text-4xl md:ml-3">Core Courses Sequence</h3>
-
-<div className="flex flex-col items-center lg:flex-row lg:justify-start justify-center md:w-full ">
-  {
-cardDetails.map((card,index)=> <Card key={index} props={card}/>)
-  }
-</div>
-
-    </section>
-  )
-}
-
-export default Section3
+    <div className="">
+      <h1 className=" mx-6 py-10 font-extrabold text-4xl text-center text-[#044e83] ">
+        Core Courses Sequence
+      </h1>
+      <div className="mt-10 space-y-40 md:space-y-0 ml-3 md:flex">
+        <div className="border-none shadow-xl shadow-gray-200 w-[80%] h-[320px] rounded-xl mx-5 md:w-[33%] object-fill hover:scale-105 transition-all duration-300">
+          <Image
+            src={Course1}
+            alt="Courses Iamge"
+          
+            className="w-full h-[400px] object-cover  rounded-xl md:w-[100%] md:h-[250px] "
+          ></Image>
+          <p className="text-center font-bold text-xl text-gray-600 py-4">
+            Programing Fundamentals
+          </p>
+        </div>
+        <div className="border-none shadow-xl shadow-gray-200 w-[80%] h-[320px] rounded-xl mx-5 md:w-[33%] object-fill hover:scale-105 transition-all duration-300">
+          <Image
+            src={Course2}
+            alt="Courses Iamge"
+            
+            className="w-full h-[400px] object-cover  rounded-xl md:w-[100%] md:h-[250px] "
+          ></Image>
+          <p className="text-center font-bold text-xl text-gray-600 py-4">
+            Web2 Using Next.js
+          </p>
+        </div>
+        <div className="border-none shadow-xl shadow-gray-200 w-[80%] h-[320px] rounded-xl mx-5 md:w-[33%] object-fill hover:scale-105 transition-all duration-300">
+          <Image
+            src={Course3}
+            alt="Courses Iamge"
+          
+            className="w-full h-[400px] object-cover  rounded-xl md:w-[100%] md:h-[250px] "
+          ></Image>
+          <p className="text-center font-bold text-xl text-gray-600 py-4">
+            Earn As You Learn
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
